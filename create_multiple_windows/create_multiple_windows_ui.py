@@ -52,7 +52,7 @@ class MultipleWindowsDialog(QtWidgets.QDialog):
         screen_w = size.width()
         self.resize(int(screen_w * 0.15), int(screen_w * 0.06))
 
-        self.INPUT_WIDTH = int(screen_w * 0.012)
+        self.input_width = int(screen_w * 0.017)
         
         # On macOS make the window a Tool to keep it on top of Maya
         if sys.platform == "darwin":
@@ -90,7 +90,7 @@ class MultipleWindowsDialog(QtWidgets.QDialog):
         """
         input = QtWidgets.QSpinBox()
         input.setButtonSymbols(QtWidgets.QAbstractSpinBox.ButtonSymbols.NoButtons)
-        input.setFixedWidth(self.INPUT_WIDTH)
+        input.setFixedWidth(self.input_width)
         input.setSingleStep(1)
         input.setMinimum(1)
         input.setMaximum(15)

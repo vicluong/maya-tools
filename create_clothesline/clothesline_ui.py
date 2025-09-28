@@ -61,8 +61,8 @@ class ClotheslineDialog(QtWidgets.QDialog):
         screen_w, screen_h = size.width(), size.height()
         self.resize(int(screen_w * 0.19), int(screen_h * 0.5))
 
-        self.thumbnail_height = int(screen_w * 0.033)
-        self.input_width = int(screen_w * 0.025)
+        self.thumbnail_height = int(screen_w * 0.05)
+        self.input_width = int(screen_w * 0.04)
         self.checkbox_margin = int(screen_w * 0.004)
         
         # On macOS make the window a Tool to keep it on top of Maya
@@ -133,6 +133,7 @@ class ClotheslineDialog(QtWidgets.QDialog):
         input = QtWidgets.QDoubleSpinBox()
         input.setButtonSymbols(QtWidgets.QAbstractSpinBox.ButtonSymbols.NoButtons)
         input.setFixedWidth(self.input_width)
+        input.adjustSize()
         input.setDecimals(4)
         input.setMinimum(min)
         input.setMaximum(max)

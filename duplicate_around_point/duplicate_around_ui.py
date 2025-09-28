@@ -55,7 +55,7 @@ class DuplicateAroundDialog(QtWidgets.QDialog):
         screen_w = size.width()
         self.resize(int(screen_w * 0.14), int(screen_w * 0.1))
 
-        self.INPUT_WIDTH = int(screen_w * 0.012)
+        self.input_width = int(screen_w * 0.017)
         
         # On macOS make the window a Tool to keep it on top of Maya
         if sys.platform == "darwin":
@@ -70,7 +70,7 @@ class DuplicateAroundDialog(QtWidgets.QDialog):
         # Number of sides input/slider
         self.sides_input = QtWidgets.QSpinBox()
         self.sides_input.setButtonSymbols(QtWidgets.QAbstractSpinBox.ButtonSymbols.NoButtons)
-        self.sides_input.setFixedWidth(self.INPUT_WIDTH)
+        self.sides_input.setFixedWidth(self.input_width)
         self.sides_input.setSingleStep(0)
         self.sides_input.setMinimum(3)
         self.sides_input.setMaximum(99)
