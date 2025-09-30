@@ -1,7 +1,7 @@
 # maya-tools
 
-These files should be placed within either the Maya scripts folder for the version you are currently using or within the general scripts folder for Maya.
 These files were made to be used with Maya 2026 but should be compatible with earlier versions.
+These files should be placed within either the Maya scripts folder for the version you are currently using or within the general scripts folder for Maya.
 
 To use these tools as items on a shelf, paste any code given below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
 
