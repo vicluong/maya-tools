@@ -1,7 +1,5 @@
 # maya-tools
 
-aaaaaaaaaaaaaaaaaa
-
 ## Auto Fill
 
 ### Description
