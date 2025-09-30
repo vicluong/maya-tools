@@ -1,5 +1,7 @@
 # maya-tools
 
+These files should be placed within any of the Maya script folders.
+
 To use these tools as items on a shelf, paste any code given below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
 
 ## Auto Fill
