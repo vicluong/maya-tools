@@ -14,7 +14,7 @@ When using the main function, it is intended that the height matches the y-axis.
 create_multiple_windows is the main function to use.
 """
 import maya.cmds as cmds
-import auto_bridge as ab
+import auto_fill as af
 
 
 def create_multiple_windows(height: int, width: int, 
@@ -55,7 +55,7 @@ def create_multiple_windows(height: int, width: int,
 
     if bridge_windows:
         cmds.select(wall_border + windows_border)
-        ab.auto_bridge()
+        af.auto_fill()
     
     cmds.waitCursor(st=False)
 
@@ -75,7 +75,7 @@ def get_borders_and_bboxs(obj_name, selection) -> tuple[tuple[list[str], list[fl
         wall_border, wall_bbox. The borders are a list of edges and the bboxs
         are a set of flaots describing the bounding box of each border
     """
-    edge_borders = ab.check_edge_borders(obj_name, selection)
+    edge_borders = af.check_edge_borders(obj_name, selection)
 
     window_border = get_window_border(obj_name, edge_borders)
     window_bbox = cmds.exactWorldBoundingBox(window_border)
@@ -196,7 +196,7 @@ def create_windows(height: int, width: int, obj_name: str, window: list[str],
                 if bridge_windows:
                     dup_window_border = cmds.ls(cmds.polyListComponentConversion(bo=True, te=True), fl=True)
 
-                    closest_edge_pair = ab.bridge_closest_edges(main_window_border, 
+                    closest_edge_pair = af.bridge_closest_edges(main_window_border, 
                                                                 dup_window_border)
 
                     main_window_border = get_bridged_border(main_window_border, 
