@@ -104,7 +104,7 @@ def set_new_pivot(obj_name: str, vert1: str, vert2: str, amount: int, axis: str,
         axis: Axis to be rotated around
         centre_direction: What direction the pivot should move towards
     """
-    bbox_verts = cmds.xform([vert1, vert2], q=True, t=True) # type: ignore
+    bbox_verts = cmds.xform([vert1, vert2], q=True, t=True, ws=True) # type: ignore
     obj_length = 0
 
     if "x" not in axis and "x" not in centre_direction:
