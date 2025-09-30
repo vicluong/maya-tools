@@ -106,9 +106,9 @@ This script reloads all modules found in a specified folder, which is by default
 To use this script as an item on a shelf, paste the code below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
 
 ```python
-import reload_files as rf
+import reload_modules as rm
 
-rf.reload_modules()
+rm.reload_modules()
 ```
 
 By default, all modules found in the directory where the Reload Modules
