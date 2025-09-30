@@ -111,4 +111,4 @@ import reload_modules as rm
 rm.reload_modules()
 ```
 
-By default, all modules found in the directory where the Reload Modules
+By default, all modules found in the directory where the Reload Modules are reloaded. To reload a specific folder, as an string argument specify the path of the folder you'd like to reload the modules of.
