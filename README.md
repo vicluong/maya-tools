@@ -1,5 +1,7 @@
 # maya-tools
 
+To use these tools as items on a shelf, paste any code given below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
+
 ## Auto Fill
 
 ### Description
@@ -10,8 +12,6 @@ This script allows for the user to fill the space between selected two sets of e
 
 ### Usage
 
-To use this script as an item on a shelf, paste the code below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
-
 ```python
 import auto_fill as af
 
@@ -20,7 +20,7 @@ af.auto_fill()
 
 This tool requires that two edge borders of a single object with one edge border residing in the empty space of the other edge border.
 
-By default, the script utilises Maya's Quadrangulate tool but if the user so chooses to, by writing False as an argument for auto_fill, they can have all the vertices ine one edge border connect to their closest counterparts in the other edge border.
+By default, the tool utilises Maya's Quadrangulate tool but if the user so chooses to, by writing False as an argument for auto_fill, they can have all the vertices ine one edge border connect to their closest counterparts in the other edge border.
 
 ## Create Clothesline
 
@@ -30,8 +30,6 @@ This tool allows the user to create a clothesline from a set of textures.
 ![Create Clothesline](assets/create_clothesline.gif)
 
 ### Usage
-
-To use this script as an item on a shelf, paste the code below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
 
 ```python
 from create_clothesline import clothesline_ui as clu
@@ -55,8 +53,6 @@ This tool, when selecting the edge borders of a window and an empty wall that ar
 
 ### Usage
 
-To use this script as an item on a shelf, paste the code below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
-
 ```python
 from create_multiple_windows import create_multiple_windows_ui as cmwu
 
@@ -67,7 +63,7 @@ This tool requires that two edge borders of a single object with one edge border
 
 Through the UI, users can specify how many windows they want both height-wise and width-wise. Additionally, they can choose to forgo connecting the windows and wall and just create multiples of the window instead.
 
-It is important to note that the tool assumes that height runs along the y-axis and that users should ensure that their objects follow this convention.
+It is important to note that the tool assumes that height runs along the y-axis and that users should ensure that their objects follow this convention. Additionally, it should be noted that loading times can significantly increase the more windows are made with roughly 25 windows being where loading times start to increase dramatically.
 
 ## Duplicate Around
 
@@ -78,8 +74,6 @@ This tool allows for the user to duplicate a mesh around a point a specified num
 ![Duplicate Around](assets/duplicate_around.gif)
 
 ### Usage
-
-To use this script as an item on a shelf, paste the code below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
 
 ```python
 from duplicate_around_point import duplicate_around_ui as dau
@@ -97,11 +91,9 @@ Additionally, the user can specify the number of meshes that should be created a
 
 ### Description
 
-This script reloads all modules found in a specified folder, which is by default the location of where the Reload Modules file is.
+This tool reloads all modules found in a specified folder, which is by default the location of where the Reload Modules file is.
 
 ### Usage
-
-To use this script as an item on a shelf, paste the code below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
 
 ```python
 import reload_modules as rm
