@@ -1,6 +1,6 @@
 # maya-tools
 
-These files were made to be used with Maya 2026 but should be compatible with earlier versions.
+These files are compatible with Maya 2023 through to Maya 2026.
 These files should be placed within either the Maya scripts folder for the version you are currently using or within the general scripts folder for Maya.
 
 To use these tools as items on a shelf, paste any code given below in either the command line or script editor, highlight it and middle mouse drag it onto a shelf. Make sure that, when prompted, the language of the shelf object is in Python.
@@ -104,4 +104,4 @@ import reload_modules as rm
 rm.reload_modules()
 ```
 
-By default, all modules found in the directory where the Reload Modules are reloaded. To reload a specific folder, as an string argument specify the path of the folder you'd like to reload the modules of.
+By default, all modules found in the directory where the Reload Modules file is are reloaded. To reload a specific folder, as a string argument specify the path of the directory you'd like to reload the modules of.
