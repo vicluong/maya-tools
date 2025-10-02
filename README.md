@@ -21,9 +21,9 @@ import auto_fill as af
 af.auto_fill()
 ```
 
-This tool requires that two edge borders of a single object with one edge border residing in the empty space of the other edge border.
+This tool requires the selection of two edge borders within a single object, with one edge border residing in the empty space of the other edge border.
 
-By default, the tool utilises Maya's Quadrangulate tool but if the user so chooses to, by writing False as an argument for auto_fill, they can have all the vertices ine one edge border connect to their closest counterparts in the other edge border.
+By default, the tool utilises Maya's Quadrangulate tool but if the user so chooses to, by writing False as an argument for auto_fill, they can have all the vertices in one edge border connect to their closest counterparts in the other edge border.
 
 ## Create Clothesline
 
@@ -84,11 +84,11 @@ from duplicate_around_point import duplicate_around_ui as dau
 dau.DuplicateAroundDialog.show_dialog()
 ```
 
-This tool requires that users select two vertices along the same axis, which serve as the point of connection for the other duplicated meshes.
+This tool requires that users select two vertices that differ in value only along one axis, which additionally serve as the points of connection for the other duplicated meshes.
 
 After doing so, the UI requires that the user specify in what direction should the object rotate around and where should the centre of all these meshes be located. For example, the duplicated objects above utilised the UI to specify that the object should rotate around the y-axis and that the centre of these meshes should be in the negative x direction.
 
-Additionally, the user can specify the number of meshes that should be created and if the meshes should be connected at all.
+Users can then specify the number of meshes that should be created and if the meshes should be connected at all.
 
 ## Reload Modules
 
