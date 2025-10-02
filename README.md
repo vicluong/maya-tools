@@ -84,7 +84,7 @@ from duplicate_around_point import duplicate_around_ui as dau
 dau.DuplicateAroundDialog.show_dialog()
 ```
 
-This tool requires that users select two vertices that differ in value only along one axis, which additionally serve as the points of connection for the other duplicated meshes.
+This tool requires that users select two vertices that will both differ only in value along one axis and serve as the points of connection for the other duplicated meshes.
 
 After doing so, the UI requires that the user specify in what direction should the object rotate around and where should the centre of all these meshes be located. For example, the duplicated objects above utilised the UI to specify that the object should rotate around the y-axis and that the centre of these meshes should be in the negative x direction.
 
